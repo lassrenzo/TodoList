@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Todo List</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="img/icon.png">
+
+     <!-- FONT AWESOME CDN -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+
+    <section class="p-5">
+        <div class="row">
+           <div class="col-lg-6 offset-lg-3">
+              <div class="card">
+                 <div class="card-header">
+                    <h4 class="card-title mb-0 text-info text-center">Todo List</h4>
+                 </div>
+                 <div class="card-body">
+                    <div class="sticky-section pb-1">
+                       <h5>Todo list</h5>
+                       <form class="addTask-form">
+                          <div class="form-group">
+                             <div class="input-group">
+                                <div class="input-group-prepend">
+                                   <span class="input-group-text">
+                                      <i class="fa fa-pencil-alt"></i>
+                                   </span>
+                                </div>
+                                <input type="text" id="add-list" class="form-control input-task" placeholder="New task..." required>
+  
+                                <div class="input-group-append">
+                                  <input type="submit" class="btn btn-info" value="Save Task(s)">
+                               </div>
+  
+                             </div>
+                          </div>
+                          <ul class="todo-list list-group list-group-flush">
+  
+                          </ul>
+                       </form>
+                       <hr>
+                    <ul class="todo-list list-group list-group-flush">
+  
+                    </ul>
+                    <button id="clear" class="btn-clear btn btn-dark mt-1 d-block ml-auto">Clear tasks</button>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+  
+
+
+     <footer class="footer-section">    
+        <div class="container-fluid">
+         <img class="img-fluid footer-img" src="img/logo1.png" data-aos="zoom-in-down"><br>
+         
+          <a  href="http://facebook.com/lassrenzo" target="_blank">
+          <i class="footer-icon fab fa-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i>
+         </a>
+
+         <a  href="http://twitter.com/lassrenzo" target="_blank">
+          <i class="footer-icon fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i>
+          </a>
+
+          <a  href="http://instagram.com/lassrenzo" target="_blank">
+          <i class="footer-icon fab fa-instagram" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i>
+      </a>
+      
+      <a href="mailto:lassrenzo123@gmail.com">
+          <i class="footer-icon fal fa-envelope" data-toggle="tooltip" data-placement="bottom" title="Gmail"></i>
+        </a>
+
+        <a href="https://github.com/lassrenzo" target="_blank">
+          <i class="footer-icon fab fa-github" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
+        </a>
+        <p class="text-info text-center">© Copyright <span id="year"></span> | Renzo Garcia , Web Developer.</p>
+                    
+</div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+    <!-- JAVASCRIPT BUNDLE WITH POPPER.JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+</body>
+</html>
