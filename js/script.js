@@ -28,12 +28,12 @@ clearButton.addEventListener('click', function(){
         }
 });
 //  IF THE LIST IS EMPTY THE BUTTON IS DISABLE
-var todoList = document.getElementById("li")
-
-	if (todoList == "" || addText.value == "")  {
+// var todoList = document.getElementById("li")
+	if (addText.value == "")  {
 		document.getElementById("clear").disabled = true;
 	} 
 
 // UPDATED YEAR FOOTER
 var year = document.querySelector('#year');
 year.textContent = new Date().getFullYear();
+
