@@ -23,12 +23,13 @@ var listText = function(text){
 };
 //  CREATE FUNCTION TO REMOVE ALL THE LIST ITEM
 clearButton.addEventListener('click', function(){
-        while (list.firstChild){
-          list.removeChild(list.firstChild)
+    while (list.firstChild){
+    list.removeChild(list.firstChild);
+    document.getElementById("clear").disabled = true;
         }
 });
+
 //  IF THE LIST IS EMPTY THE BUTTON IS DISABLE
-// var todoList = document.getElementById("li")
 	if (addText.value == "")  {
 		document.getElementById("clear").disabled = true;
 	} 
